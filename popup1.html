@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hoohle Search</title>
+        <link rel = "stylesheet" href="popup1.css">
+    </head>
+    <body>
+        <div class="cont" id="cont">
+            <div class="cont1" id="cont1">
+                <img class="logo" id="logo" src="Hoohle.svg">
+            </div>
+            <button class="switch" id="switch">
+                <div class="toggle"></div>
+                <p class="lefter">Hoohle Search</p>
+                <p class="righter">Image Search</p>
+            </button>
+            <div class = "cont2" id="cont2">
+                <div class = "cont2_1" id = "cont2_1">
+                    <div id="exclude">
+                        <div class="searchbar" id="searchbar">
+                            <div class="excludeIcon">
+                                <img class="excluder" src="ExcludeIcon1.png">
+                            </div>
+                            <form id = "exclsearch" autocomplete="off" action="">
+                                <input type="text" id="exsearch" autocomplete="off" name="exsearch" placeholder="Exclude">
+                            </form> 
+                        </div>
+                    </div>
+                    <div id="match">
+                        <div class="searchbar" id="searchbar">
+                            <div class="matchIcon">
+                                <img class="matcher" src="MatchIcon1.png">
+                            </div>
+                            <form id = "matcsearch" autocomplete="off" action="">
+                                <input type="text" id="masearch" autocomplete="off" name="masearch" placeholder="Match">
+                            </form> 
+                        </div>
+                    </div>
+                    <div id="file">
+                        <div class="searchbar" id="searchbar">
+                            <div class="fileIcon">
+                                <img class="filer" src="FileIcon1.png">
+                            </div>
+                            <div class="cont2_1_1">
+                                <select name="Search for Filtype" id="fisearch">
+                                    <option value="None">Filetype</option>
+                                    <option value="bmp">Bitmap File (BMP)</option>
+                                    <option value="gif">Graphics Interchange Format (GIF)</option>
+                                    <option value="ico">Icon (ICO)</option>
+                                    <option value="jpg">JPEG File (JPG)</option>
+                                    <option value="png">Portable Network Graphics (PNG)</option>
+                                    <option value="raw">Raw File (RAW)</option>
+                                    <option value="svg">Scalable Vector Graphics (SVG)</option>
+                                    <option value="webp">WebP File (WEBP)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="size">
+                        <div class="searchbar" id="searchbar">
+                            <div class="sizeIcon">
+                                <img class="sizer" src="SizeIcon1.png">
+                            </div>
+                            <div class="cont2_1_1">
+                                <select name="Search for Siztype" id="sisearch">
+                                    <option value="None">All Sizes</option>
+                                    <option value="l">Large</option>
+                                    <option value="m">Medium</option>
+                                    <option value="i">Icon</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="colour">
+                        <div class="searchbar" id="searchbar">
+                            <div class="colourIcon">
+                                <img class="colourer" src="ColourIcon.png">
+                            </div>
+                            <div class="cont2_1_1">
+                                <select name="Search for Coltype" id="cosearch">
+                                    <option value="None">All Colours</option>
+                                    <option value=",gray">Black and White</option>
+                                    <option value=".red">Red</option>
+                                    <option value=".orange">Orange</option>
+                                    <option value=".yellow">Yellow</option>
+                                    <option value=".green">Green</option>
+                                    <option value=".teal">Teal</option>
+                                    <option value=".blue">Blue</option>
+                                    <option value=".purple">Purple</option>
+                                    <option value=".pink">Pink</option>
+                                    <option value=".white">White</option>
+                                    <option value=".gray">Gray</option>
+                                    <option value=".black">Black</option>
+                                    <option value=".brown">Brown</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="usage">
+                        <div class="searchbar" id="searchbar">
+                            <div class="usageIcon">
+                                <img class="usager" src="UsageIcon1.svg">
+                            </div>
+                            <div class="cont2_1_1">
+                                <select name="Search for Usetype" id="ussearch">
+                                    <option value="None">All Usage Licenses</option>
+                                    <option value="cl">Creative Commons Licenses</option>
+                                    <option value="ol">Commercial and Other Licenses</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="time">
+                        <div class="searchbar" id="searchbar">
+                            <div class="timeIcon">
+                                <img class="timer" src="TimeIcon1.png">
+                            </div>
+                            <div class="cont2_1_1">
+                                <select name="Search for Timtype" id="tisearch">
+                                    <option value="None">Any Time</option>
+                                    <option value="d">Past Day</option>
+                                    <option value="w">Past Week</option>
+                                    <option value="m">Past Month</option>
+                                    <option value="y">Past Year</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont2_2" id="cont2_2">
+                    <div class="searchbar" id="searchbar">
+                        <div class="searchIcon">
+                            <img class="searcher" src="SearchIcon1.svg">
+                        </div>
+                        <form id = "mainsearch" autocomplete="off" action="">
+                            <input type="text" id="hsearch" autocomplete="off" name="hsearch" placeholder="Search Hoohle">
+                            <input type="submit" id="enter" autocomplete="off" value="↵">
+                        </form> 
+                    </div>
+                </div>
+            </div>
+            <div class = "tips">
+                <h1>Use Hoohle Search as an advanced search tool, or to search things from other tabs!</h1>
+                <h1>Insert "..." as a placeholder for unknown words!</h1>
+                <h1>Use the "Exclude" function to exclude words or phrases!</h1>
+                <h1>Use the "Match" function to only get results containing that exact word or phrase!</h1>
+                <h1>Use this extension to filter by size, colour, usage license, and time posted!</h1>
+            </div>
+        </div>
+    <script src = "popup1.js"></script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+{
+    "name": "Hoohle Search - Google Search Buddy",
+    "author": "derekgou19@gmail.com",
+    "description": "Advanced Google Search Add-On",
+    "version": "2.0",
+    "icons": {
+        "128": "hoohleLogo.png"
+    },
+    "manifest_version": 3,
+    "action": {
+        "default_title": "Hoohle Search",
+        "default_popup": "popup.html",
+        "default_icon": "hoohleLogo.png"
+    }
+}
